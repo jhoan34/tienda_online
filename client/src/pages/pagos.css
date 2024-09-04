@@ -1,0 +1,138 @@
+/* estilos.css */
+.container {
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-section, .info-section {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%;
+}
+
+h2, h4 {
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #bbbbbb;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.field input[type="submit"] {
+  background-color: #3a3a3a;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.field input[type="submit"]:hover {
+  background-color: #555555;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.pagosss {  
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagosss button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagosss button:hover {
+  background-color: #555555;
+}
+
+/* estilos.css */
+
+/* Para dispositivos con un ancho máximo de 1200px */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section, .info-section {
+    width: 80%;
+  }
+}
+
+/* Para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  .form-section, .info-section {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h2, h4 {
+    font-size: 1.5rem;
+  }
+
+  .field input {
+    padding: 8px;
+  }
+
+  .field input[type="submit"], .pagosss button {
+    padding: 8px 15px;
+  }
+}
+
+/* Para dispositivos con un ancho máximo de 480px */
+@media (max-width: 480px) {
+  .container {
+    margin-top: 5%;
+  }
+
+  .form-section, .info-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h2, h4 {
+    font-size: 1.2rem;
+  }
+
+  .field input {
+    padding: 6px;
+  }
+
+  .field input[type="submit"], .pagosss button {
+    padding: 6px 10px;
+  }
+}

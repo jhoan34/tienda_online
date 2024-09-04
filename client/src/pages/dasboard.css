@@ -1,0 +1,219 @@
+* {
+    color: aliceblue;
+}
+
+.dashboard {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    gap: 5%;
+}
+
+.dashboard .funcionalidades,
+.dashboard .info-cuenta {
+    position: relative;
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+}
+
+.dashboard .funcionalidades {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dashboard .info-cuenta {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-info-cuenta {
+    background-color: rgb(26, 26, 26);
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* Ajusta el ancho según tu diseño */
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: calc(100% - 12px); /* Ajusta el ancho del input, considerando el padding */
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #666; /* Borde oscuro */
+    background-color: #555; /* Fondo del input oscuro */
+    color: #fff; /* Texto blanco */
+    border-radius: 4px;
+}
+
+.form-button {
+    background-color: #555; /* Fondo oscuro del botón */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-button:hover {
+    background-color: #777; /* Color de fondo más claro al pasar el ratón */
+}
+
+.info-cuenta-container {
+    width: 100%;
+    height: 100%;
+}
+
+.info-cuenta-container h2 {
+    text-align: center;
+}
+
+.info-cuenta-container .info-cuenta-content {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-cuenta-container .info-cuenta-content button {
+    width: 50%;
+    height: 5%;
+    padding: 0.3rem;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    border: 1px solid rebeccapurple;
+    text-transform: uppercase;
+}
+
+.info-cuenta-container .info-cuenta-content button:hover {
+    background-color: #272727;
+}
+
+.info-cuenta-container .info-cuenta-content .info-cuenta-info {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Estilos para el historial de compras */
+.historial-compras-container {
+    overflow-y: auto;
+}
+
+.historial-compras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.historial-compras-info {
+    border: 1px solid #fada5e; /* Cambiado el color del borde */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cambiado el grid-template-columns */
+}
+
+.historial-compras-info div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambiado el grid-template-columns */
+    gap: 10px;
+}
+
+.historial-compras-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.historial-compras-info p {
+    margin: 5px 0;
+}
+
+.historial-compras-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+    .dashboard {
+        margin-top: 12%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard .funcionalidades,
+    .dashboard .info-cuenta {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .info-cuenta-container .info-cuenta-content .info-cuenta-info {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .historial-compras {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        margin-top: 14%;
+    }
+
+    .dashboard .funcionalidades,
+    .dashboard .info-cuenta {
+        width: 100%;
+    }
+
+    .info-cuenta-container .info-cuenta-content button {
+        width: 70%;
+    }
+
+    .historial-compras {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        margin-top: 16%;
+    }
+
+    .info-cuenta-container .info-cuenta-content button {
+        width: 90%;
+    }
+
+    .historial-compras {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 5px;
+    }
+}

@@ -1,0 +1,394 @@
+.caja-individual {
+  margin-top: 10%;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: 
+    "image details"
+    "dds dds";
+  grid-template-columns: 35% 30%;
+  grid-template-rows: 70% 50vh;
+  gap: 3%;
+  background-color: #121212;
+}
+
+.mensaje-error {
+  color: #ff6b6b;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#image {
+  position: relative;
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+}
+
+.producto-detalles2 {
+  grid-area: details;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2%;
+  background-color: #1c1c1c;
+}
+
+.dds {
+  margin-top: 50%;
+  grid-area: dds;
+  background-color: #181818;
+  width: 100%;
+  height: 100vh;
+  border-radius: 8px;
+}
+
+.dds .dds-info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  color: #b0b0b0;
+}
+
+.dds .dds-logo {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dds .dds-logo div {
+  background-color: #333333;
+  width: 50%;
+  height: 50%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px 2px #000000;
+}
+
+#image .adelante,
+#image .atras {
+  position: absolute;
+  bottom: 50%;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  color: #ffffff;
+  background-color: #333333;
+  width: 3rem;
+  height: 3rem;
+}
+
+#image .adelante {
+  right: 0;
+}
+
+#image .atras {
+  left: 0;
+}
+
+.info {
+  position: relative;
+  color: #e0e0e0;
+  height: 50%;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px 2px #000000;
+}
+
+.info .title {
+  margin-top: 5%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info .precios12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+
+.info p {
+  margin-top: 1%;
+  text-align: center;
+}
+
+.info .botones {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info .botones button {
+  width: 60%;
+  height: 3rem;
+  padding: 0.3rem;
+  background-color: #333333;
+  color: white;
+  border: 1px solid #555555;
+  box-shadow: 0 0 5px 1px #000000;
+  text-transform: uppercase;
+}
+
+.info .botones button:hover {
+  opacity: 0.8;
+  background-color: #444444;
+}
+
+.info .botones p {
+  color: white;
+}
+
+#pr {
+  font-size: 1.5rem;
+}
+
+.carac {
+  position: relative;
+  margin-top: 5%;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px 2px #000000;
+  height: 50%;
+  display: grid;
+  row-gap: 5%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.cantidades {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cantidades p {
+  color: white;
+}
+
+.cantidades .mas,
+.cantidades .menos {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #333333;
+  color: #e0e0e0;
+  border: 2px solid #555555;
+}
+
+.cantidades .mas:hover,
+.cantidades .menos:hover {
+  background-color: #444444;
+}
+
+#lista {
+  color: white;
+  background-color: #1e1e1e;
+  width: 12vh;
+  height: 4vh;
+  text-transform: uppercase;
+  border: 2px solid #333333;
+}
+
+#lista option {
+  color: white;
+  text-transform: uppercase;
+}
+
+.colores-tipos {
+  display: flex;
+  height: 15vh;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2%;
+  border-top: 1px solid #555555;
+  border-bottom: 1px solid #555555;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.colores-tipos div {
+  width: 20%;
+}
+
+.colores-tipos div img {
+  width: 100%;
+  height: 100%;
+}
+
+.colores-tipos div:hover {
+  border: 2px solid #333333;
+}
+
+#colores_gl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  align-items: start;
+}
+
+#colores {
+  color: white;
+  background-color: #1e1e1e;
+  width: 20vh;
+  height: 4vh;
+  text-transform: uppercase;
+  border: 2px solid #333333;
+}
+
+#colores option {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Media Queries */
+
+/* Pantallas medianas (<= 1400px) */
+@media only screen and (max-width: 1400px) {
+  .caja-individual {
+    margin-top: 20%;
+    grid-template-areas:
+      "image"
+      "details"
+      "dds";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2%;
+    height: auto;
+  }
+
+  #image {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #image .adelante,
+  #image .atras {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .producto-detalles2 {
+    width: 70%;
+    height: 90vh;
+    margin: 0 auto;
+  }
+
+  .dds {
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+}
+
+/* Pantallas pequeñas (<= 800px) */
+@media only screen and (max-width: 800px) {
+  .caja-individual {
+    margin-top: 25%;
+    grid-template-areas:
+      "image"
+      "details"
+      "dds";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2%;
+    height: auto;
+  }
+
+  #image {
+    width: 90%;
+    height: 70vh;
+    margin: 0 auto;
+  }
+
+  #image .adelante,
+  #image .atras {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .producto-detalles2 {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+  }
+
+  .dds {
+    width: 90%;
+    height: 110vh;
+    margin: 0 auto;
+  }
+}
+
+/* Pantallas muy pequeñas (<= 576px) */
+@media only screen and (max-width: 576px) {
+  .caja-individual {
+    margin-top: 30%;
+    grid-template-areas:
+      "image"
+      "details"
+      "dds";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2%;
+    height: auto;
+  }
+
+  #image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #image .adelante,
+  #image .atras {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .producto-detalles2 {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .dds {
+    width: 100%;
+    height: 120vh;
+    margin: 0 auto;
+  }
+}

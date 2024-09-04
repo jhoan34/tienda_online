@@ -1,0 +1,77 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.fondo-pro {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    position: absolute; /* Asegura que ocupe todo el espacio disponible */
+    top: 0;
+    left: 0;
+}
+
+.fondo-pro .product {
+    display: flex;
+    height: 70vh;
+    width: 60vh;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden; /* Evita desbordamiento de bordes */
+}
+
+.fondo-pro .product .image {
+    height: 70%;
+    width: 100%;
+}
+
+.fondo-pro .product .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+}
+
+.fondo-pro .product .infortrt {
+    height: 30%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.des-ms{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.des-ds{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.fondo-pro .product .infortrt h4, .fondo-pro .product .infortrt p, .fondo-pro .product .infortrt a {
+    margin: 0;
+}
+
+.fondo-pro .product .infortrt a {
+    color: aqua;
+    text-decoration: none;
+}
